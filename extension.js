@@ -1,6 +1,6 @@
 const Meta = imports.gi.Meta;
 
-function lastWSIndex() { return global.screen.n_workspaces - 1 }
+function lastWSIndex() { return global.workspace_manager.n_workspaces - 1 }
 
 function indexDown(activeWorkspaceIndex) {
 	if ( activeWorkspaceIndex < lastWSIndex() ) {
@@ -23,7 +23,7 @@ function get_neighbor(direction) {
 	} else {
 		index = indexDown(index);
 	}
-	return global.screen.get_workspace_by_index(index);
+	return global.workspace_manager.get_workspace_by_index(index);
 }
 
 let old = {};
