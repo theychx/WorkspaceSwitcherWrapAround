@@ -1,5 +1,5 @@
 {
-	"shell-version": ["3.30"],
+	"shell-version": ["3.30", "3.32"],
 	"uuid": "workspace-switch-wraparound@theychx.org",
 	"name": "Workspace Switch Wraparound",
 	"description": "When switching workspaces, going down from the bottom workspace switches to the top workspace. Likewise, up from the top workspace goes to the bottom workspace.",
